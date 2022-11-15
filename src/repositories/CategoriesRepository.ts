@@ -1,4 +1,4 @@
-import { Category } from "../model/category"
+import { Category } from "../model/Category"
 
 
 interface ICreateCategoryDTO {
@@ -8,10 +8,10 @@ interface ICreateCategoryDTO {
 
 class CategoriesRepository {
 
-    private categories: Category[]
+    private categories: Category[];
 
     constructor() {
-        this.categories = []
+        this.categories = [];
     }
 
     create({ name, description }: ICreateCategoryDTO): void {
@@ -24,6 +24,11 @@ class CategoriesRepository {
         })
 
         this.categories.push(category)
+    }
+
+    list(): Category[] {
+        return this.categories;
+
     }
 
 
