@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add typeorm reflect-metadata
+  C:\Program Files\nodejs\node.exe C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add typeorm@0.2.45
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\deyvs\AppData\Local\Microsoft\WindowsApps;;C:\Users\deyvs\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\deyvs\AppData\Roaming\npm
@@ -23,7 +23,8 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
     },
     "devDependencies": {
       "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -50,6 +51,7 @@ npm manifest:
       "express": "^4.18.2",
       "multer": "^1.4.5-lts.1",
       "pg": "^8.8.0",
+      "reflect-metadata": "^0.1.13",
       "swagger-ui-express": "^4.6.0",
       "ts-node-dev": "^2.0.0",
       "typeorm": "^0.3.11",
@@ -2010,7 +2012,7 @@ Lockfile:
   
   pg@^8.8.0:
     version "8.8.0"
-    resolved "https://registry.npmjs.org/pg/-/pg-8.8.0.tgz"
+    resolved "https://registry.yarnpkg.com/pg/-/pg-8.8.0.tgz#a77f41f9d9ede7009abfca54667c775a240da686"
     integrity sha512-UXYN0ziKj+AeNNP7VDMwrehpACThH7LUl/p8TDFpEUuSejCUIwGSfxpHsPvtM6/WXFy6SU4E5RG4IJV/TZAGjw==
     dependencies:
       buffer-writer "2.0.0"
