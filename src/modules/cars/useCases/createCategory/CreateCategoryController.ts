@@ -1,6 +1,6 @@
 import { Request, Response } from "express"
-import { CreateCategoryUseCase } from "./CreateCategoryUseCase"
 import { container } from "tsyringe"
+import { CreateCategoryUseCase } from "./CreateCategoryUseCase"
 
 
 class CreateCategoryController {
