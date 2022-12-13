@@ -12,9 +12,6 @@ class User {
     IsUnique: true;
 
     @Column()
-    username: string;
-
-    @Column()
     password: string;
 
     @Column()
