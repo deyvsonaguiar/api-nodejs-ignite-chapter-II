@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add reflext-metadata
+  C:\Program Files\nodejs\node.exe C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/bcrypt -d
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\deyvs\AppData\Local\Microsoft\WindowsApps;;C:\Users\deyvs\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\deyvs\AppData\Roaming\npm
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/reflext-metadata: Not found
-      at Request.params.callback [as _callback] (C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at Request.self.callback (C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
-      at Request.emit (node:events:527:28)
-      at Request.<anonymous> (C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
-      at Request.emit (node:events:527:28)
-      at IncomingMessage.<anonymous> (C:\Users\deyvs\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
-      at Object.onceWrapper (node:events:641:28)
-      at IncomingMessage.emit (node:events:539:35)
-      at endReadableNT (node:internal/streams/readable:1345:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  Error: EPERM: operation not permitted, unlink 'D:\deyvs\Downloads\rocketseat\ignite\api-nodejs-chapter-II\node_modules\.bin\ts-node-dev'
 
 npm manifest: 
   {
@@ -55,6 +45,7 @@ npm manifest:
       "@types/express": "^4.17.14",
       "@types/multer": "^1.4.7",
       "@types/node": "^18.11.10",
+      "@types/reflect-metadata": "^0.1.0",
       "@types/swagger-ui-express": "^4.1.3",
       "@types/uuid": "^8.3.4",
       "csv-parse": "^5.3.2",
@@ -276,6 +267,13 @@ Lockfile:
     version "1.2.4"
     resolved "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
     integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
+  
+  "@types/reflect-metadata@^0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@types/reflect-metadata/-/reflect-metadata-0.1.0.tgz#592805bdf6d63dd7229773218afeba37ac2eab16"
+    integrity sha512-bXltFLY3qhzCnVYP5iUpeSICagQ8rc9K2liS+8M0lBcz54BHs3O6W5UvqespVSuebo1BXLi+/y9ioELAW9SC2A==
+    dependencies:
+      reflect-metadata "*"
   
   "@types/semver@^7.3.12":
     version "7.3.13"
@@ -2154,7 +2152,7 @@ Lockfile:
     dependencies:
       picomatch "^2.2.1"
   
-  reflect-metadata@^0.1.13:
+  reflect-metadata@*, reflect-metadata@^0.1.13:
     version "0.1.13"
     resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
     integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
