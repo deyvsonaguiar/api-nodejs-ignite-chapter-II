@@ -1,3 +1,4 @@
+import { Car } from "../infra/http/typeorm/entities/Car"
 
 interface ICreateCarDTO {
     name: string, 
@@ -11,7 +12,8 @@ interface ICreateCarDTO {
 
 interface ICarsRepository {
 
-    create(data: ICreateCarDTO): Promise<void>
+    create(data: ICreateCarDTO): Promise<Car>
+    findByLicensePlate(license_plate: string): Promise<Car>
 
 }
 
