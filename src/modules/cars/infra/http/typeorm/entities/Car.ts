@@ -1,8 +1,8 @@
-import {Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn} from "typeorm";
+import {Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, PrimaryGeneratedColumn} from "typeorm";
 import { v4 as uuid } from 'uuid'
 import { Category } from "./Category";
 
-@Entity()
+@Entity("cars")
 class Car {
     @PrimaryColumn()
     id?: string
